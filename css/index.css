@@ -1,71 +1,193 @@
-header{
-  height: 70px;
-  padding: 0 30px;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+.ptb-m {
+  padding: 80px 0;
+}
+.ttl {
+  font-size: 30px;
+}
+.btn {
+  display: block;
+  width: 300px;
+  background-color: #cd0224;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/*header */
+
+.top-mv {
+  display: flex;
+  background: url(../img/mv.png) center/cover;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  height: 80vh;
+}
+.top-mv-main-copy {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.top-mv-sub-copy {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+.top-feature {
+  color: #fff;
+  background-color: black;
+}
+.top-feature-txt {
+  margin-top: 20px;
+}
+.top-service-ttl {
+  text-align: center;
+}
+.top-service-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.top-service-item {
+  width: 49%;
+  margin-top: 20px;
+  margin-right: calc(100%- (49% * 2));
+}
+.top-service-item:nth-child(2n) {
+  margin-left: 10px;
+}
+.top-service-btn {
+  margin: 40px auto;
+}
+.top-news {
+  background-color: #000;
+}
+.top-news-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.top-news-ttl {
+  color: white;
+}
+.top-news-btn {
+  width: 160px;
+  font-size: 14px;
+  padding: 7px;
+}
+.top-news-list {
+  margin-top: 20px;
+}
+.top-news-item-link {
+  display: flex;
+  padding: 20px;
+  align-items: center;
   background-color: #fff;
-  position: sticky;
-  z-index: 1;
+  margin-bottom: 10px;
 }
-.header__ttl{
-  font-size: 24px;
-  width: 80px;
+.top-news-item-date {
+  margin-right: 10px;
 }
-.header__nav{
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  left: -100%;
-  background-color: #eee;
+/* top-blog */
+.top-blog-ttl {
   text-align: center;
-  transition: 0.7s;
 }
-.header__nav-item{
-  padding-top: 80px;
+.top-blog-item-ttl {
+  font-weight: bold;
+  font-size: 18px;
 }
-.header__nav-list{
-  list-style-type: none;
-  margin-top: 50px;
+.top-blog-item-date {
+  margin-top: 5px;
+  font-size: 14px;
+  margin-right: 20px;
 }
-.menu{
-  display: inline-block;
-  width: 35px;
-  height: 32px;
-  cursor: pointer;
-  position: relative;
-  z-index: 10;
+.top-blog-btn {
+  margin: 40px auto 0;
 }
-.menu__line-top,
-.menu__line-middle,
-.menu__line-bottom{
-  display: inline-block;
-  width: 100%;
-  position: absolute;
+/* top-blog end*/
+
+/* top-company */
+.top-company-list {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 0;
+  font-size: 24px;
+}
+.top-company-item {
+  width: 50%;
+}
+.top-company-link {
+  background-color: #cd0224;
+}
+.top-recruit-link {
   background-color: #000;
-  transition: 0.5s;
-  height: 4px;
 }
-.menu__line-top{
-  top: 0;
+.top-company-item-link {
+  width: 100%;
+  display: inline-block;
+  line-height: 10;
+  text-align: center;
 }
-.menu__line-middle{
-  top: 14px;
-}
-.menu__line-bottom{
-  bottom: 0px;
-}
-.menu.open span:nth-of-type(1){
-  top: 14px;
-  transform: rotate(45deg);
-}
-.menu.open span:nth-of-type(2){
-  opacity: 0;
-}
-.menu.open span:nth-of-type(3){
-  top: 14px;
-  transform: rotate(-45deg);
-}
-.in{
-  transform: rotateX(100%);
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+  .wrap-s {
+    width: 90%;
+  }
+  .top-service-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .top-blog-item{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .top-news-item-link {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-copyright {
+    margin-right: 0;
+  }
+  .footer-nav-item {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .footer-nav-item::after {
+    display: none;
+  }
 }

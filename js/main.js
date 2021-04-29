@@ -1,7 +1,7 @@
 const target = document.getElementById("menu");
-target.addEventListener('click',() => {
+target.addEventListener('click', () => {
   const target = document.getElementById("menu");
-  target.classlist.toggle('open');
-  const nav = document.getElementById("nav");
+  target.classList.toggle('open');
+  const nav = document.getElementById("drawer-nav");
   nav.classList.toggle('in');
-});
+})
