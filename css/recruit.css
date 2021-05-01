@@ -1,0 +1,25 @@
+.recruit-type-info{
+  width: 100%;
+}
+.recruit-type-ttl{
+  font-size: 24px;
+  border-bottom: 1px solid #222;
+}
+.recruit-type-description{
+  margin: 20px 0;
+}
+.recruit-type-info-name,
+.recruit-type-info-data{
+  border: 1px solid #222;
+  padding: 10px 10px;
+}
+.recruit-type-info-name{
+  background-color: #f5f6f9;
+  width: 30%;
+}
+.recruit-type-info-data{
+  width: 70%;
+}
+.recruit-mid-caree{
+  margin-top: 70px;
+}

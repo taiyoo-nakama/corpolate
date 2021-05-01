@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <title>Document</title>
+</head>
+<body>
 <header>
   <h2 class="header__ttl">TECH</h2>
   <nav class="header__nav" id="nav">
@@ -29,17 +41,42 @@
   </nav>
 </header>
 <!-- header-end -->
+<div class="page-mv">
+  <h1 class="ttl">お問い合わせ</h1>
+</div>
 <main>
-
-</main>
-<!-- bottom-contact -->
-<section class="bottom-contact ptb-m">
-  <div class="wrap">
-    <h2 class="top-contact-ttl ttl">お問い合わせ</h2>
-    <p class="top-contact-txt">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
-    <a href="contact.html" class="top-contact-btn btn">お問い合わせ</a>
+  <!-- contact -->
+  <div class="contact wrap-s ptb-m">
+    <form action="index.html" class="contact-form" method="POST">
+      <div class="contact-form-item">
+        <label for="" class="contact-item-name">
+          会社名
+        </label>
+        <input type="text" id="company" class="contact-form-item-input">
+      </div>
+      <div class="contact-form-item">
+        <label for="" class="contact-item-name">
+          お名前 <span class="contact-form-item-required">*</span>
+        </label>
+        <input type="text" id="name" name="name" class="contact-form-item-input"　required>
+      </div>
+      <div class="contact-form-item">
+        <label for="" class="contact-item-name">
+          メールアドレス <span class="contact-form-item-required">*</span>
+        </label>
+        <input type="text" name="mail" id="mail" class="contact-form-item-input"　required>
+      </div>
+      <div class="contact-form-item">
+        <label for="" class="contact-item-name">
+          お問い合わせ内容 <span class="contact-form-item-required">*</span>
+        </label>
+        <textarea id="comment" cols="80" rows="8" name="textarea" class="contact-form-textarea"　required></textarea>
+      </div>
+        <input type="submit" class="contact-form-submit" value="お申し込み">
+    </form>
   </div>
-</section>
+</main>
+
 <!-- bottom-contact end -->
 <!-- footer -->
 <footer class="footer">
@@ -60,3 +97,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+</body>
+
+</html>

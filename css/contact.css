@@ -1,0 +1,29 @@
+.contact-form-item:not(:first-child){
+  margin-top: 20px;
+}
+.contact-form-item-required{
+  color: #cd0225;
+}
+.contact-form-item-input,
+.contact-form-textarea{
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.contact-form-submit{
+  width: 300px;
+  margin: 20px auto 0;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  display: block;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
